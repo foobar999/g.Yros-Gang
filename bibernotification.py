@@ -2,7 +2,7 @@ import instaloader
 
 def main():
   L = instaloader.Instaloader()
-  profile = L.from_username(username="realpostillon")
+  profile = Profile.from_username(L.context, "realpostillon")
   print("Profile:{profile}".format(profile = profile))
 
 if __name__ == "__main__":
