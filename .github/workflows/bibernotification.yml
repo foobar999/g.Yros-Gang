@@ -19,5 +19,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
+      - name: Load requirements
+        run: pip install -r requirements.txt
       - name: Run script
         run: python bibernotification.py
