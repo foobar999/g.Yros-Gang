@@ -1,5 +1,9 @@
+import instaloader
+
 def main():
-  print("Python Hello World!")
+  L = instaloader.Instaloader()
+  profile = L.from_username(username="realpostillon")
+  print("Profile:{profile}".format(profile = profile))
 
 if __name__ == "__main__":
   main()
